@@ -1,0 +1,21 @@
+algoritmo "Aula14_SoComC"
+var
+   Nome: Caractere
+   SoC: Vetor [1..10] de Caractere
+   C, Tot: Inteiro
+inicio
+      Tot <- 0
+      Para C <- 1 ate 10 faca
+           Escreva ("Digite seu nome: ")
+           Leia (Nome)
+           Se (copia(maiusc(Nome), 1, 1) = "C") entao
+              Tot <- Tot + 1
+              SoC[Tot] <- Nome
+           FimSe
+      FimPara
+      LimpaTela
+      EscrevaL ("LISTAGEM FINAL")
+      Para C <- 1 ate Tot faca
+           EscrevaL (SoC[C])
+      FimPara
+fimalgoritmo
